@@ -8,13 +8,17 @@
 
 第一种方式，我经常会使用一个viewport.js来达到效果，但其实不用js直接写meta也是没有问题的。
 由于展示的原因加了--，去掉--即可使用。
+
 <-- meta name="viewport" content="width=640, target-densitydpi=device-dpi, user-scalable=no" -->
+
 其中640为设计稿宽度，现在比较常见的移动端设计稿宽度是640和750，可以根据情况自由选择。
 由于target-densitydpi是安卓的私有属性，所以如果在ios端或者pc上可能会报个错，但是基本不影响使用，你如果有代码洁癖，可以用我的viewport.js来进行分别输出，当然viewport得放在head中。
 具体的预览效果可以参考我的网站 http://my.bobo.so/Hair/index.html#member/o-xFkv61XF0xIdsRD6FYLjaR8cPg
 
 第二种方式，兼容性就比较好一点，并不需要用到js输出。
+
 <-- meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" -->
+
 这种方式出现在我最新的项目中，目前并没有上线，所以没有预览入口。
 
 
